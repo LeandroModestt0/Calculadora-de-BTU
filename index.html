@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Calculadora de BTU – Descubra o ar-condicionado ideal</title>
+<meta name="description" content="Calcule quantos BTUs seu ar-condicionado precisa de forma rápida e gratuita. Ideal para quartos, salas e escritórios.">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="background"></div>
+
+<div class="card">
+  <h1>❄️ Calculadora de BTU</h1>
+  <p class="subtitle">
+    Descubra em segundos a potência ideal do seu ar-condicionado, de forma técnica e precisa.
+  </p>
+
+  <div class="info">
+    Um ar-condicionado subdimensionado gasta mais energia e não resfria corretamente.
+    Esta calculadora considera tamanho, pessoas, sol e eletrônicos.
+  </div>
+
+  <label>Largura do ambiente (m)</label>
+  <input id="Largura" type="number">
+
+  <label>Comprimento do ambiente (m)</label>
+  <input id="Comprimento" type="number">
+
+  <label>Quantidade de pessoas</label>
+  <input id="pessoas" type="number">
+
+  <label>TVs</label>
+  <input id="tv" type="number" value="0">
+
+  <label>Computadores / notebooks</label>
+  <input id="pc" type="number" value="0">
+
+  <label>Geladeiras</label>
+  <input id="geladeira" type="number" value="0">
+
+  <label>Fogão / cooktop</label>
+  <input id="fogao" type="number" value="0">
+
+  <label>Aquário grande</label>
+  <input id="aquario" type="number" value="0">
+
+  <label>O ambiente recebe sol?</label>
+  <select id="sol">
+    <option value="">Selecione</option>
+    <option value="1">Não</option>
+    <option value="1.1">Pouco</option>
+    <option value="1.2">Muito</option>
+  </select>
+
+  <button onclick="calcularBTU()">Calcular agora</button>
+
+  <div id="resultado"></div>
+  <div id="recomendacao"></div>
+  <div id="produtos"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
